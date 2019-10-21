@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Suranna&display=swap" rel="stylesheet">
+    <link href="./assets/style.css" rel="stylesheet">
+
+    <!-- Libraries -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment.min.js"></script>
+
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Favicon -->
+    <link href="data:image/x-icon;base64,AAABAAEAEBAAAAAAAABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA////AP///wD///8A////AP///wBGumH/Rrph/0a6Yf9GumH/////AP///wD///8A////AP///wD///8A////AJq5yQA7e5oAMmeFAEa6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf80aIoAN26RAC5cfgA1aZMAM2WJAP///wCVrb4ARrph/0a6Yf9GumH/Rrph/0a2Yf9GumH/Rrph/0a6Yf8tW3kAN26SADdtkQAoUHAAGTRPAjVnkAD///8AmbXIAEa6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/I0pmADhykwA3bpIAH0BcAEa6Yf8bOVYA////AJq2xwBGumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GuWH/Rrph/0a6Yf8aN1IAGTRQAEa6Yf9GumH/Rrph/////wD///8A////AEa6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf/f5egA////AP///wBGumH/Rblg/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a2Yf9GumH/1+LaHf///wD///8ARrph/0a6Yf9FuGD/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph//7+/gD///8A////AP///wBGumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf////8A////AP///wD///8ARrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0WrYP9GumH/Rrph/0a6Yf/b6t4h////AP///wD///8A////AEa6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf////8A////AP///wD///8A////AP///wD///8ARrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf9GumH/Rrph/////wD///8A////AP///wD///8A////AP///wBGumH/Rrph/0a6Yf9GumH/Rrph/0a6Yf////8A////AEa6Yf9GumH/////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8A////AP///wBGumH/Rrph/////wD///8A////AP///wD///8A////AP///wD///8A////AP///wD///8AWFhYAAoKCgD///8ARrph/////wD///8A//8AAPh/AADgPwAAgH8AAIB7AACAMQAAwAEAAMABAADAAQAA4AEAAOADAADgBwAA8AMAAPgZAAD/+QAA//sAAA==" rel="icon" type="image/x-icon" />
+
+
+    <title>Train Scheduler</title>
+</head>
+
+<body>
+    <div class="jumbotron jumbotron-fluid text-white">
+        <div class="container">
+            <h1 class="display-4">Animal Crossing Scenic Train</h1>
+            <p class="lead">As the Mayor of your town, it's your job to schedule the incoming trains at the Train Station! Input the upcoming trains into the schedule using this form.</p>
+        </div>
+
+
+        <!-- <iframe src="https://giphy.com/embed/upkr4KsLF7xRK" width="480" height="192" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/5-centimeters-per-second-upkr4KsLF7xRK"></a>via GIPHY</a></p> -->
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                <div class="card">
+                    <div class="card-header">
+                        Current Scheduled Trains
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-hover">
+                            <thead class="text-center">
+                                <tr>
+                                    <th scope="col">Train Name</th>
+                                    <th scope="col">Destination</th>
+                                    <th scope="col">Next Arrival</th>
+                                    <th scope="col">Frequency</th>
+                                    <th scope="col">Minutes Away</th>
+                                </tr>
+                            </thead>
+                            <tbody class="text-center">
+                                <tr>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col my-3">
+                <div class="card">
+                    <div class="card-header">
+                        Add Train to Schedule
+                    </div>
+                    <div class="card-body">
+                        <form action="#" id="form">
+                            <!-- Train Name -->
+                            <label for="add-train">Train Name</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" id="add-train" aria-describedby="basic-addon3">
+                            </div>
+                            <!-- Desitination of Train -->
+                            <label for="add-destination">Destination</label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" id="add-destination"
+                                    aria-describedby="basic-addon3">
+                            </div>
+                            <!-- When Train Departs -->
+                            <label for="train-depart-time">First Train Time <span class="additional-note">(HH:mm military time)</span></label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" id="train-depart-time"
+                                    aria-describedby="basic-addon3">
+                            </div>
+                            <!-- How Frequently This Train Arrives -->
+                            <label for="train-frequency">Frequency<span class="additional-note"> (in minutes)</span></label>
+                            <div class="input-group mb-3">
+                                <div class="input-group-prepend">
+                                </div>
+                                <input type="text" class="form-control" id="train-frequency"
+                                    aria-describedby="basic-addon3">
+                            </div>
+                            <button type="button" class="btn" id="submit-button">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="copyright">
+                    ©
+                    <script> document.write(new Date().getFullYear()) </script> ♥ by Danielle Burrage for KU Bootcamp
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.0.4/firebase-database.js"></script>
+    <script src="./assets/trainlogic.js"></script>
+</body>
+
+</html>

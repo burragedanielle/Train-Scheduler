@@ -1,0 +1,92 @@
+body {
+    font-family: 'Raleway', sans-serif;
+}
+
+h1 {
+    font-family: 'Suranna', serif;
+}
+
+th, 
+label {
+    color: #333;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+table,
+.table td, 
+.table th,
+thead,
+.table thead th, 
+th {
+    border-bottom: 1px solid #c089c4;
+    border-top: 1px solid #c089c4;
+    border-color: #c089c4;
+}
+
+.form-control {
+    border: 1px solid #c089c4;
+}
+
+.jumbotron{
+    color: #fff;
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('./images/train-background.png');
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.card-header {
+    background-color: #c089c4;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #fff;
+}
+
+.btn {
+  border-width: 1px;
+  background-color: transparent;
+  font-weight: 600;
+  border-radius: 3px;
+  font-size: 16px;
+  line-height: 1.6em;
+  opacity: 0.8;
+  filter: alpha(opacity=80);
+  padding: 10px 20px;
+  border-color: #c96184;
+  color: #c96184;
+  text-transform: uppercase;
+}
+
+.btn:hover {
+    background-color: #c96184;
+    border-color: #c96184;
+    color: #fff; 
+}
+
+.card {
+    border-color: #888888;
+}
+
+.additional-note {
+    font-size: 12px;
+    text-transform: lowercase;
+}
+
+/* FOOTERS */
+
+.footer {
+    background-color: #434547;
+    padding: 15px;
+    margin: 20 auto;
+    line-height: 20px;
+    overflow: hidden;
+    text-align: center;
+}
+
+.footer .copyright {
+    color: #eee;
+    padding: 5px 15px;
+    margin: 10px 3px;
+    line-height: 20px;
+    text-align: center;
+}
