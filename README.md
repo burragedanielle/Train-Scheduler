@@ -16,7 +16,3 @@ Animal Crossing is a Nintendo video-game series where you get to be the mayor of
 
 ##### jQuery
 - jQuery to manipulate the content on the page. 
-
-
-### Notes
-Must run on Google Chrome as 'Not Secure' because OMDB API is not a secure link in order to see OMDB functionality
